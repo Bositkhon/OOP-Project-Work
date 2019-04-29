@@ -97,7 +97,7 @@ void User::listBooksByCategory() {
         cin >> temp;
 }
 
-void User::listBooksByNumber() {
+void User::listBooksByName() {
     system("cls");
     string temp, name;
     cout << "Please enter the name that you want to find: " << endl;
@@ -129,14 +129,14 @@ void User::showBookInfo() {
         if (lib.books[i].getISBN() == isbn ) {
             system("cls");
             cout << "Detail information of the book with ISBN number " << isbn << " : " << endl;
-            cout << "Name            : " << lib.books[i].getName() << endl;
+            cout << "Name              : " << lib.books[i].getName() << endl;
             cout << "Author            : " << lib.books[i].getAuthor() << endl;
             cout << "Number            : " << lib.books[i].getNumber() << endl;
-            cout << "Category        : " << lib.books[i].getCategory() << endl;
-            cout << "Price            : " << setiosflags(ios::fixed) << setprecision(2) << lib.books[i].getPrice() << endl;
-            cout << "Discount        : " << setiosflags(ios::fixed) << setprecision(2) << lib.books[i].getDiscount()  << endl;
-            cout << "Disc_num        : " << lib.books[i].getDiscNum() << endl;
-            cout << "Information        : " << lib.books[i].getInformation() << endl;
+            cout << "Category          : " << lib.books[i].getCategory() << endl;
+            cout << "Price             : " << setiosflags(ios::fixed) << setprecision(2) << lib.books[i].getPrice() << endl;
+            cout << "Discount          : " << setiosflags(ios::fixed) << setprecision(2) << lib.books[i].getDiscount()  << endl;
+            cout << "Disc_num          : " << lib.books[i].getDiscNum() << endl;
+            cout << "Information       : " << lib.books[i].getInformation() << endl;
             cout << endl;
             cout << "Input 0 to exit" << endl;
             cin >> temp;

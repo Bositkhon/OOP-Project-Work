@@ -14,7 +14,7 @@ class User {
 public:
     void listAllBooks();
     void listBooksByCategory();
-    void listBooksByNumber();
+    void listBooksByName();
     void showBookInfo();
     void saveUsers();
     void saveBooks();

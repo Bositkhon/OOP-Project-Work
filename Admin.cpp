@@ -180,7 +180,7 @@ void Admin::showInterface(string username) {
                 listBooksByCategory();
                 break;
             case '9':
-                listBooksByNumber();
+                listBooksByName();
                 break;
             case '*':
                 showBookInfo();

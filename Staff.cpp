@@ -269,7 +269,7 @@ void Staff::showInterface(string username) {
                 listBooksByCategory();
                 break;
             case '6':
-                listBooksByNumber();
+                listBooksByName();
                 break;
             case '7':
                 showBookInfo();

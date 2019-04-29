@@ -102,7 +102,7 @@ void Customer::showInterface(string username) {
                 listBooksByCategory();
                 break;
             case '5':
-                listBooksByNumber();
+                listBooksByName();
                 break;
             case '6':
                 showBookInfo();
