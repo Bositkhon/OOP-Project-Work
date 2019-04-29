@@ -1,3 +1,4 @@
 [ 2019-4-29 22:7:28 ] Customer(guest) refund books(ISBN:12345678) with 2 copy(s)
 [ 2019-4-29 22:7:43 ] Customer(guest) refund books(ISBN:12345678) with 1 copy(s)
 [ 2019-4-29 22:8:5 ] Customer(guest) buy books(ISBN:12345678) with 2 copy(s)
+[ 2019-4-29 22:39:18 ] Manager(root) delete books(ISBN:4) with 2 copy(s)

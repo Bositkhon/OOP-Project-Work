@@ -63,11 +63,7 @@ void User::listAllBooks() {
             << setw(10) << lib.books[i].getCategory() << "|" << endl;
     }
     cout << "------------------------------------------------------------------------------------" << endl;
-    cout << endl;
-    cout << "Input 0 to exit" << endl;
-    cin >> temp;
-    while (temp != "0")
-        cin >> temp;
+    system("pause");
 }
 
 void User::listBooksByCategory() {
@@ -91,10 +87,7 @@ void User::listBooksByCategory() {
     }
     cout << "------------------------------------------------------------------------------------" << endl;
     cout << endl;
-    cout << "Input 0 to exit" << endl;
-    cin >> temp;
-    while (temp != "0")
-        cin >> temp;
+    system("pause");
 }
 
 void User::listBooksByName() {
@@ -114,10 +107,7 @@ void User::listBooksByName() {
         }
     cout << "------------------------------------------------------------------------------------" << endl;
     cout << endl;
-    cout << "Input 0 to exit" << endl;
-    cin >> temp;
-    while (temp != "0")
-        cin >> temp;
+    system("pause");
 }
 
 void User::showBookInfo() {
@@ -138,10 +128,7 @@ void User::showBookInfo() {
             cout << "Disc_num          : " << lib.books[i].getDiscNum() << endl;
             cout << "Information       : " << lib.books[i].getInformation() << endl;
             cout << endl;
-            cout << "Input 0 to exit" << endl;
-            cin >> temp;
-            while (temp != "0")
-                cin >> temp;
+            system("pause");
             return;
         }
     cout << "Book does not exist " << endl;

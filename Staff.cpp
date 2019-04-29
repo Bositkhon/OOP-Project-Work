@@ -122,7 +122,7 @@ void Staff::modifyBook() {
             cout << "Do you want to change the name of the book? (1. Yes 0. No )" << endl;
             cin >> choice;
             if (choice == 1) {
-                cout << "Please input the new name of the book" << endl;
+                cout << "Please enter the new name of the book" << endl;
                 cin >> name;
                 lib.books[i].setName(name);
             }
@@ -140,17 +140,17 @@ void Staff::modifyBook() {
                 cin >> author;
                 lib.books[i].setAuthor(author);
             }
-            /*cout << "Do you want to change the copy number of the book? (input 1 for YES and 0 for NO )" << endl;
+            cout << "Do you want to change the copy number of the book? (1. Yes 0. No )" << endl;
             cin >> choice;
             if (choice == 1) {
-                cout << "Please input the new copy number of the book" << endl;
+                cout << "Please enter the new copy number of the book" << endl;
                 while (1) {
                     cin >> number;
                     if (checkForDigits(number)) break;
-                    cout << "Pleass input a digital number :)   Try again." << endl;
+                    cout << "Invalid input. Please try again!" << endl;
                 }
                 lib.books[i].setNumber(stoi(number));
-            }*/
+            }
             cout << "Do you want to change the category of the book? (1. Yes 0. No )" << endl;
             cin >> choice;
             if (choice == 1) {
@@ -165,7 +165,7 @@ void Staff::modifyBook() {
             cout << "Do you want to change the price of the book? (1. Yes 0. No )" << endl;
             cin >> choice;
             if (choice == 1) {
-                cout << "Please input the new price of the book" << endl;
+                cout << "Please enter the new price of the book" << endl;
                 while (1) {
                     cin >> price;
                     if (checkForDigits(price)) break;
@@ -176,7 +176,7 @@ void Staff::modifyBook() {
             cout << "Do you want to change the discount of the book? (1. Yes 0. No )" << endl;
             cin >> choice;
             if (choice == 1) {
-                cout << "Please input the new discount of the book" << endl;
+                cout << "Please enter the new discount of the book" << endl;
                 while (1) {
                     cin >> discount;
                     if (checkForDigits(discount)) break;
@@ -187,7 +187,7 @@ void Staff::modifyBook() {
             cout << "Do you want to change the disc_num of the book? (1. Yes 0. No )" << endl;
             cin >> choice;
             if (choice == 1) {
-                cout << "Please input the new disc_num of the book" << endl;
+                cout << "Please enter the new disc_num of the book" << endl;
                 while (1) {
                     cin >> disc_num;
                     if (checkForDigits(disc_num)) break;
@@ -220,10 +220,7 @@ void Staff::viewProfit() {
     cout << "Total income: " << lib.getIncome() << endl;
     cout << "Total outcome: " << lib.getOutcome() << endl;
     cout << "Total net profit: " << lib.getIncome() - lib.getOutcome() << endl;
-    cout << "Input 0 to exit" << endl;
-    cin >> temp;
-    while (temp != "0")
-        cin >> temp;
+    system("pause");
     return;
 }
 

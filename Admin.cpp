@@ -119,10 +119,7 @@ void Admin::listUsers() {
                 << "|" << setw(12) << Stat[lib.users[i].getStatus() - 1] << "|" << endl;
     cout << "-------------------------------------------------------------------------" << endl;
     cout << endl;
-    cout << "Input 0 to exit" << endl;
-    cin >> temp;
-    while (temp != "0")
-        cin >> temp;
+    system("pause");
 }
 
 void Admin::showInterface(string username) {
